@@ -1,0 +1,610 @@
+ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+    padding-left: 0; /*убираем левый отступ, равный 40px*/
+    display: inline;
+  }
+  
+  li {
+    float:left;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+
+
+  a {
+    position: relative;
+    color: #000000; /*задаём цвет ссылки*/
+    cursor: pointer;
+    line-height: 1; /*задаём высоту строки*/
+    text-decoration: none; /*убираем подчёркивание*/
+  
+  }
+  a:after {
+    display: block;
+    position: absolute;
+    left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;/*задаём длинну линии до наведения курсора*/
+    height: 2px; /*задаём ширину линии*/
+    background-color: #0089cf; /*задаём цвет линии*/
+    
+    content: "";
+    transition: width 0.3s ease-out; /*задаём время анимации*/
+  }
+  
+  a:hover:after,
+  a:focus:after {
+    width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+  }
+  a:hover{
+    color: #0089cf;
+  }
+  h1{
+    font-size: 7px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: 0.35px;
+  text-align: left;
+  color: #666;
+  }
+.header{
+    width: 1280px;
+    height: 55px;
+    padding: 24px 188.5px 0px 187px;
+    background-color: #ffffff;
+    position: relative ;
+    align-items: center;
+}
+
+
+.logo{
+    width: 33px;
+    height: 40px;
+    margin: 0 10.5px 8px 10px;
+    padding: 5.5px 7.5px;
+    background-color: #0089cf;
+    align-items: center;
+    position: absolute;
+}
+
+.imgb{
+   margin-top: 6px;
+   margin-left: 6.5px;
+}
+
+.menu{
+  float: left;
+    margin: 16.5px 20.5px 17px 80.5px;
+    width: 500.5px;
+  height: 5.5px;
+  font-family: fantasy;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.35px;
+  text-align: left;
+}
+
+.cursor_tab{
+  color: #0089cf;
+}
+
+.side_menu{
+  margin-left: 900px;
+  width: 300px;
+}
+
+.loop{
+  font-family: FontAwesome;
+  font-size: 13px;
+  margin-right: 3px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.69;
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: #666;
+}
+.card{
+  font-family: fantasy;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.35px;
+  text-align: left;
+}
+.main{
+  width: 1280px;
+  height: 540px;
+  padding: 24px 188.5px 0px 187px;
+  background-color: #ffffff;
+  position: relative ;
+  align-items: center;
+}
+.boots{
+  width: 319px;
+  height: 147.5px;
+  margin-left: 100px;
+  margin-top: 150px;
+  float: left;
+}
+.like{
+  float: left;
+  font-family: FontAwesome;
+  font-size: 17px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 80px;
+  right: 700px;
+  border: solid 0.5px rgb(202, 202, 214);;
+  background-color: rgb(255, 255, 255);;
+  line-height: 3;
+  text-align: center;
+  cursor: pointer;
+  color: rgb(202, 202, 214);
+}
+
+.info{
+  float: left;
+   margin: 150px 0px 0 418px;
+   width: 402px;
+   height: 59px;
+   font-family: Haettenschweiler;
+   font-size: 27px;
+   font-weight: 500;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: 2.5px;
+   text-align: left;
+   line-height: 1.5;
+   color: rgb(27, 27, 27);
+}
+.text1{
+  font-size: 35px;
+}
+.text2{
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.7;
+  color:  #666;
+  font-family:  Arial, Helvetica, sans-serif;
+}
+.text3{
+  font-size: 12px;
+  line-height: 4;
+  letter-spacing: 0.1px;
+  font-weight: bolder;
+  color: #666;
+  font-family:  DejaVu Sans Mono, monospace;
+}
+.text3_1{
+  color: #0089cf;
+  cursor: pointer;
+}
+.cur1
+{
+  cursor: pointer;
+}
+.cur2
+{
+  cursor: pointer;
+}
+.text4{
+  font-size:10px;
+  font-weight: bold;
+  line-height: 1.7;
+  color:  rgb(167, 165, 165);
+  font-family:  Arial, Helvetica, sans-serif;
+}
+
+.size_t{
+  cursor: pointer;
+}
+.size_z{
+  cursor: pointer;
+}
+.arrow{
+  font-family: FontAwesome;
+  width: 5.5px;
+  height: 4px;
+  margin: 0.5px 0 1px 40px;
+  text-align: right;
+  color: #000000;
+}
+.button{
+  font-family: fantasy;
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.36;
+  letter-spacing: 0.36px;
+  text-align: left;
+  color:  rgb(0, 0, 0);
+  width: 82.5px;
+  height: 25px;
+  margin: 7.5px 5px 0 0;
+  padding: 5px 4.5px 4.5px 5px;
+  border: solid 0.5px #e4e4e4;
+  float: left;
+  background-color: white;
+  cursor: pointer;
+}
+
+.button1{
+  width: 82.5px;
+  height: 25px;
+  margin: 7.5px 5px 0 100px;
+  padding: 5px 4.5px 4.5px 5px;
+  background-color: #333;
+  font-family: fantasy;
+  font-size: 9px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.66;
+  letter-spacing: 0.36px;
+  text-align: center;
+  color:  rgb(255, 255, 255);
+  cursor: pointer;
+}
+.under_button{
+  font-size: 10px;
+  width: 88.5px;
+  height: 75px;
+  position: absolute;
+  top: 470px;
+  right: 538px;
+  border: solid 0.5px #e4e4e4;
+  float: left;
+  background-color: white;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+.button2{
+  font-family: fantasy;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.2;
+  letter-spacing: 0.66px;
+  text-align: left;
+  color:  rgb(0, 0, 0);
+  width: 110.5px;
+  height: 43px;
+  border: solid 0.5px #e4e4e4;
+  float: left;
+  background-color: white;
+  margin-left: 10px;
+  cursor: pointer;
+ }
+ .button3{
+  font-family: fantasy;
+  font-size: 11px;
+  margin-left: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.7;
+  letter-spacing: 0.36px;
+  text-align: center;
+  color:  rgb(255, 254, 254);
+  width: 110.5px;
+  height: 43px;
+  border: solid 0.5px #e4e4e4;
+  float: left;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+ }
+ .under_button1{
+  font-family: fantasy;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.36;
+  text-align: left;
+  width: 110.5px;
+  height: 172px;
+  position: absolute;
+  top: 490px;
+  right: 182px;
+  border: solid 0.5px #e4e4e4;
+  float: left;
+  background-color: white;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+ }
+.about{
+  width: 1280px;
+  height: 610px;
+  padding: 24px 188.5px 0px 187px;
+  background-color: #ffffff;
+  position: relative ;
+  align-items: center;
+  z-index: 9;
+}
+
+.info1{
+  position: absolute;
+  top: 300px;
+  left: 230px;
+  width: 402px;
+  height: 59px;
+  font-family: fantasy;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.5px;
+  text-align: left;
+  line-height: 2.5;
+  color: rgb(236, 236, 236);
+  z-index: 10;
+}
+.text5{
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.14px;
+  text-align: left;
+  color: #fff;
+}
+
+.Story{
+  width: 1280px;
+  height: 610px;
+  padding: 2px 188.5px 0px 187px;
+  background-color: #fff;
+  position: relative ;
+  align-items: center;
+  z-index: 9;
+}
+.Story1{
+  width: 1280px;
+  height: 610px;
+  background-color: #f6f6f6;
+  position: relative ;
+  align-items: center;
+  z-index: 9;
+}
+
+.front_img{
+  float: left;
+  width: 477.98px;
+  height: 594.98px;
+  margin-left: 60px;
+}
+
+.typing{
+  float: left;
+  margin-left: 50px ;
+  margin-top: 80px;
+  font-size:10px;
+  line-height: 2;
+  letter-spacing: 1.4px;
+  color: rgb(136, 136, 136);
+  font-family:  fantasy;
+}
+
+.text6
+{
+  font-family: Haettenschweiler;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 2.5px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  z-index: 10;
+}
+.text7{
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.14px;
+  text-align: left;
+  color: rgb(156, 152, 152);
+}
+.text8
+{
+  font-family: Haettenschweiler;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  z-index: 10;
+}
+
+.text9
+{
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.14px;
+  text-align: left;
+  color: rgb(134, 133, 133);
+}
+
+.info2{
+  float: left;
+  width: 300px;
+  height: 420px;
+  margin-left: 10px;
+  margin-top: 100px;
+  border: solid 2px #e4e4e4;
+  background-color: #fff;
+}
+
+.typing1{
+  margin-left: 26px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.text10{
+  margin-left: 10px;
+  text-align: start;
+  font-size: 14px;
+  line-height: 8;
+  letter-spacing: 0.1px;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  font-family:  DejaVu Sans Mono, monospace;
+}
+
+.black{
+  color: #0089cf;
+  cursor: pointer;
+}
+
+.white{
+  color: #0089cf;
+  cursor: pointer;
+}
+
+.leftstr, .rightstr {
+  float: left; /* Обтекание справа */ 
+  width: 113px; /* Ширина текстового блока */ 
+  height: 80px;
+ }
+ .rightstr {
+  text-align: right; /* Выравнивание по правому краю */ 
+ }
+.heart{
+  color: black;
+}
+.heart_red{
+  color: red;
+}
+ .arrow1{
+  font-family: FontAwesome;
+  width: 5.5px;
+  height: 4px;
+  margin: 0.5px 0 1px 40px;
+  text-align: right;
+  color: #000000;
+}
+.Social{
+  width: 1280px;
+  height: 240px;
+  padding: 24px 188.5px 0px 187px;
+  background-color: #ffffff;
+  position: relative ;
+  align-items: center;
+}
+
+.title{
+  /* margin: 100px 50px 100px 500px; */
+  text-align: center;
+  margin-top: 100px;
+  background-color: #0089cf;
+}
+
+.modal{
+  position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .5)
+}
+.product_info{
+  width: 500px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-color: #ffffff;
+}
+
+.product_img{
+  margin-top: 23%;
+  margin-left: 10%;
+}
+
+.cresy{
+  width: 28px;
+  height: 26px;
+  margin: 10px 2.5px 24.5px 0px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.information{
+  width: 230px;
+  height: 12px;
+  margin: 20px 172.5px 14px 50.5px;
+  font-family: Haettenschweiler;
+  font-size: 35px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.44px;
+  text-align: left;
+  color: #333;
+}
+
+.personal_information{
+  margin-top: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size:10px;
+  width: 180px;
+  color: #ccc;
+}
+
+.Cart{
+  width: 600px;
+  height: 100%;
+  margin-top: 300px;
+  padding: 15.5px 19px 9.5px 18.5px;
+  background-color: #f2f9fd;
+  font-size: 12px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+input{
+  border: none;
+}
+
+select{
+  border: none;
+  -moz-appearance: none;
+-webkit-appearance: none;
+}
+
+.stroke {
+  width: 180px;
+  height: 0.5px;
+  background-color: #e4e4e4;
+}
+.pi{
+  margin-top: 18px;
+  font-size: 20px;
+}
+.show{display:block}
+.hide{display:none}
+.fade{animation-name: fade; animation-duration: 0.75s;}

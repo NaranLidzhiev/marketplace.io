@@ -1,0 +1,326 @@
+body{
+  background-color: #f2f9fd;
+}
+ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+    padding-left: 0; /*убираем левый отступ, равный 40px*/
+    display: inline;
+  }
+  
+  li {
+    float:left;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+
+
+  a {
+    position: relative;
+    color: #000000; /*задаём цвет ссылки*/
+    cursor: pointer;
+    line-height: 1; /*задаём высоту строки*/
+    text-decoration: none; /*убираем подчёркивание*/
+  
+  }
+  a:after {
+    display: block;
+    position: absolute;
+    left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;/*задаём длинну линии до наведения курсора*/
+    height: 2px; /*задаём ширину линии*/
+    background-color: #0089cf; /*задаём цвет линии*/
+    
+    content: "";
+    transition: width 0.3s ease-out; /*задаём время анимации*/
+  }
+  
+  a:hover:after,
+  a:focus:after {
+    width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+  }
+  a:hover{
+    color: #0089cf;
+  }
+  h1{
+    font-size: 7px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: 0.35px;
+  text-align: left;
+  color: #666;
+  }
+.header{
+    width: 1280px;
+    height: 55px;
+    padding: 24px 188.5px 0px 187px;
+    position: relative ;
+    align-items: center;
+}
+
+
+.logo{
+    width: 33px;
+    height: 40px;
+    margin: 0 10.5px 8px 10px;
+    padding: 5.5px 7.5px;
+    background-color: #0089cf;
+    align-items: center;
+    position: absolute;
+}
+
+.imgb{
+   margin-top: 6px;
+   margin-left: 6.5px;
+}
+
+.menu{
+  float: left;
+    margin: 16.5px 20.5px 17px 80.5px;
+    width: 500.5px;
+  height: 5.5px;
+  font-family: fantasy;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.35px;
+  text-align: left;
+}
+
+.cursor_tab{
+  color: #0089cf;
+}
+
+.side_menu{
+  margin-left: 900px;
+  width: 300px;
+}
+
+.loop{
+  font-family: FontAwesome;
+  font-size: 13px;
+  margin-right: 3px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.69;
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: #666;
+}
+.card{
+  font-family: fantasy;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.35px;
+  text-align: left;
+}
+.main{
+  width: 1280px;
+  height: 540px;
+  padding: 24px 188.5px 0px 187px;
+  background-color: #ffffff;
+  position: relative ;
+  align-items: center;
+}
+
+.title{
+    /* margin: 100px 50px 100px 500px; */
+    text-align: center;
+    margin-top: 100px;
+    font-family: Haettenschweiler;
+    font-size: 46px;
+    letter-spacing: 2px;
+    z-index: 2;
+    position: relative;
+  }
+.line{
+  z-index: 1;
+  position: absolute;
+  top: 130px;
+  left: 730px;
+}
+.undertitle{
+  text-align: center;
+  font-family: Haettenschweiler;
+  color: #0089cf;
+  font-size: larger;
+}
+.bg {
+  width: 290px;
+  height: 310px;
+  margin: 20.5px 10px 10px 15.5px;
+  padding: 85.5px 11px 19px 13.5px;
+  text-align: center;
+  background-color: #fff;
+  float: left;
+  font-size: 20px;
+  font-family: Haettenschweiler;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+.bg_middle {
+  width: 600px;
+  height: 400px;
+  margin: 10.5px 10px 10px 350px;
+  text-align: center;
+  padding: 0 0 19px;
+  background-color: #fff;
+  font-size: 20px;
+  font-family: Haettenschweiler;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+.bg1 {
+  text-align: center;
+  width: 290px;
+  height: 420px;
+  background-color: #fff;
+  position: absolute;
+  right: 210px;
+  top: 210px;
+  font-size: 20px;
+  font-family: Haettenschweiler;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+.shiny {
+  color: rgb(159, 159, 159);
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.cross {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.cross1 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.cross2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.bg2{
+  width: 600px;
+  height: 310px;
+  margin: 20.5px 10px 10px 15.5px;
+  padding: 85.5px 11px 19px 13.5px;
+  text-align: left;
+  background-color: #fff;
+  float: left;
+  font-size: 20px;
+  font-family: Haettenschweiler;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.textX{
+  margin: 10px 10px 10px 10px;
+}
+
+.textY
+{
+  font-size: 17px;
+  color: #666;
+}
+
+.textZ
+{
+  font-size: 12px;
+  word-spacing: 1px;
+  line-height: 2px;
+  color: rgb(181, 181, 181);
+}
+.red{
+  color: #fc7070;
+}
+
+.lunar
+{
+  width: 600px;
+  height: 310px;
+  margin-left: 660px;
+  margin-top: 30px;
+  padding-top: 80px;
+  padding-bottom: 22px;
+  background-color: #fff;
+  font-size: 20px;
+  font-family: Haettenschweiler;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.product_info{
+  width: 600px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-color: #ffffff;
+}
+
+.product_img{
+  margin-top: 23%;
+  margin-left: 10%;
+}
+
+.cresy{
+  width: 28px;
+  height: 26px;
+  margin: 10px 2.5px 24.5px 0px;
+  text-align: right;
+  cursor: pointer;
+}
+.lunar_img
+{
+  margin-left: 60px;
+  margin-right: 30px;
+  margin-top: 80px;
+}
+
+.settings{
+  background: rgb(0, 0, 0);
+  border: 0.1875em solid #0F1C3F;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 670px;
+  left: 815px;
+}
+
+.sliders
+{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  margin-left: 7px;
+  margin-top: 6px;
+}
+.modal{
+  position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.show{display:block}
+.hide{display:none}
+.fade{animation-name: fade; animation-duration: 0.75s;}
